@@ -317,6 +317,24 @@ main section li {
     z-index: 1;
 }
 
+.hero-logo {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.school-logo {
+    max-width: 120px;
+    height: auto;
+    border-radius: 50%;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.3);
+    border: 3px solid rgba(255,255,255,0.8);
+    transition: transform 0.3s ease;
+}
+
+.school-logo:hover {
+    transform: scale(1.05);
+}
+
 #hero h2 {
     font-size: 4em;
     margin-bottom: 35px;
@@ -722,7 +740,8 @@ table tbody tr:hover {
 
 .gallery-images img {
     max-width: 100%;
-    height: 200px;
+    height: 250px;
+    width: 100%;
     object-fit: cover;
     display: block;
     margin-bottom: 15px;
@@ -1077,10 +1096,30 @@ footer p {
 
 .about-cards-wrapper {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: repeat(2, 1fr);
     gap: 30px;
     margin-top: 40px;
     justify-content: center;
+}
+
+/* 校园风采页面的活动特色卡片 - 3列布局 */
+#gallery-content .about-cards-wrapper {
+    grid-template-columns: repeat(3, 1fr);
+}
+
+/* 北邮成就页面的核心成就领域卡片 - 2*2布局 */
+.service-cards-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+    margin-top: 40px;
+    margin-bottom: 60px;
+    justify-content: center;
+}
+
+/* 北邮成就页面的科研创新亮点卡片 - 2*4布局 */
+#services-content .about-cards-wrapper {
+    grid-template-columns: repeat(2, 1fr);
 }
 
 .about-card {
@@ -1134,14 +1173,6 @@ footer p {
 }
 
 /* --- 服务/产品页面 (services.html) - 优化部分 --- */
-.service-cards-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    gap: 30px;
-    margin-top: 40px;
-    margin-bottom: 60px;
-    justify-content: center;
-}
 
 .service-card {
     background: var(--background-white);
@@ -1428,6 +1459,16 @@ footer p {
     .about-cards-wrapper {
         grid-template-columns: 1fr;
     }
+    
+    /* 校园风采页面活动特色卡片小屏幕调整 */
+    #gallery-content .about-cards-wrapper {
+        grid-template-columns: 1fr;
+    }
+    
+    /* 北邮成就页面科研创新亮点卡片小屏幕调整 */
+    #services-content .about-cards-wrapper {
+        grid-template-columns: 1fr;
+    }
     .about-card {
         text-align: center;
     }
@@ -1488,6 +1529,10 @@ footer p {
         font-size: 0.9em;
         flex: 1;
         min-width: 120px;
+    }
+
+    .school-logo {
+        max-width: 80px;
     }
 
     .button {
