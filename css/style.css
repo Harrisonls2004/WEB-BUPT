@@ -340,6 +340,21 @@ main section li {
     letter-spacing: 1px;
 }
 
+.hero-poem {
+    font-size: 1.15em !important;
+    font-style: italic;
+    opacity: 0.95;
+    margin-bottom: 15px !important;
+}
+
+.hero-slogan {
+    font-size: 1.4em !important;
+    font-weight: 600 !important;
+    margin-top: 30px !important;
+    color: #fff;
+    text-shadow: 0 2px 8px rgba(0,0,0,0.3);
+}
+
 .hero-buttons {
     display: flex;
     gap: 20px;
@@ -1037,6 +1052,15 @@ footer p {
     font-size: 1.8em;
     margin-top: 0;
     font-weight: 700;
+}
+
+.about-card h4 {
+    text-align: left;
+    margin-bottom: 15px;
+    color: var(--primary-color);
+    font-size: 1.3em;
+    margin-top: 0;
+    font-weight: 600;
 }
 
 .goals-list {
