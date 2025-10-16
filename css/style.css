@@ -784,6 +784,59 @@ table tbody tr:hover {
     box-shadow: 0 4px 10px rgba(0,0,0,0.15);
 }
 
+/* 音频播放器特殊样式 */
+audio.full-width-media {
+    width: 100%;
+    max-width: 600px;
+    outline: none;
+    border: 2px solid var(--primary-color);
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 102, 204, 0.2);
+}
+
+audio.full-width-media:focus {
+    border-color: var(--accent-color);
+    box-shadow: 0 4px 20px rgba(0, 102, 204, 0.3);
+}
+
+/* 音频播放器卡片特殊样式 */
+.audio-player-card {
+    background: linear-gradient(135deg, #f8f9fa 0%, #e3f2fd 100%);
+    border: 2px solid var(--primary-color);
+    box-shadow: 0 8px 25px rgba(0, 102, 204, 0.15);
+}
+
+.audio-player-card h4 {
+    color: var(--primary-color);
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+.audio-intro {
+    font-size: 1.1em;
+    color: var(--primary-color);
+    font-weight: 600;
+    margin-bottom: 20px;
+    padding: 10px 20px;
+    background: rgba(0, 102, 204, 0.1);
+    border-radius: 8px;
+    display: inline-block;
+}
+
+/* 音频播放器说明文字 */
+.media-card .audio-description {
+    margin-top: 15px;
+    font-style: italic;
+    color: #555;
+    font-size: 1em;
+}
+
+.media-card .audio-error {
+    color: #e74c3c;
+    margin-top: 10px;
+    font-weight: 600;
+}
+
 
 /* --- 页面顶部装饰条 (Page Header Decoration) - 固定在顶部 --- */
 .page-header-decoration {
