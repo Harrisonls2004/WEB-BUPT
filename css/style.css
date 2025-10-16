@@ -528,11 +528,13 @@ body.index-page #main-content-wrapper {
     color: var(--text-medium);
     margin-bottom: 60px;
     text-align: justify;
+    text-indent: 2em;
+    padding: 0 20px;
 }
 
 .intro-stats {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     gap: 30px;
     margin-top: 50px;
 }
@@ -1094,6 +1096,17 @@ footer p {
     line-height: 1.8;
 }
 
+/* 通用intro-paragraph样式 */
+.intro-paragraph {
+    font-size: 1.15em;
+    line-height: 1.9;
+    color: var(--text-medium);
+    margin-bottom: 30px;
+    text-align: justify;
+    text-indent: 2em;
+    padding: 0 20px;
+}
+
 .about-cards-wrapper {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -1374,6 +1387,17 @@ footer p {
         grid-template-columns: repeat(2, 1fr);
         gap: 20px;
     }
+    
+    .intro-text {
+        text-indent: 1.5em;
+        padding: 0 10px;
+    }
+    
+    .intro-paragraph {
+        text-indent: 1.5em;
+        padding: 0 10px;
+        font-size: 1.1em;
+    }
 
     .stat-item {
         padding: 25px 15px;
@@ -1552,6 +1576,17 @@ footer p {
     .intro-stats {
         grid-template-columns: 1fr;
         gap: 15px;
+    }
+    
+    .intro-text {
+        text-indent: 1em;
+        padding: 0 5px;
+    }
+    
+    .intro-paragraph {
+        text-indent: 1em;
+        padding: 0 5px;
+        font-size: 1.05em;
     }
 
     .stat-item {
