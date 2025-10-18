@@ -751,6 +751,14 @@ table tbody tr:hover {
     box-shadow: 0 2px 8px rgba(0,0,0,0.1);
     transition: transform 0.3s ease;
 }
+
+/* 竖版图片特殊处理 */
+.gallery-images img.portrait-img {
+    object-fit: contain;
+    object-position: center;
+    background: #f8f9fa;
+}
+
 .gallery-images figure:hover img {
     transform: scale(1.05);
 }
