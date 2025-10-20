@@ -1,34 +1,31 @@
-/* css/style.css - 美化升级版本 */
-
-/* 导入Google字体 */
 @import url('https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;700;900&family=Playfair+Display:wght@700;900&display=swap');
 
-/* --- 变量定义 --- */
+/* 变量定义 */
 :root {
-    --primary-color: #1e5a96; /* 主色调：优雅深蓝 */
-    --primary-light: #3b82f6; /* 浅蓝 */
-    --primary-lighter: #e0f2fe; /* 极浅蓝 */
-    --secondary-color: #7c3aed; /* 次要色调：紫色 */
-    --accent-color: #f59e0b; /* 强调色：金色 */
-    --sidebar-bg: #1e3a5f; /* 侧边栏背景色：深蓝 */
-    --sidebar-text: #e8f0ff; /* 侧边栏文本色：浅蓝白 */
-    --sidebar-hover-bg: #2d5a8c; /* 侧边栏悬停背景色 */
-    --background-light: #f0f4f8; /* 浅背景色 */
-    --background-white: #ffffff; /* 纯白背景色 */
-    --text-dark: #0f172a; /* 深文本色 */
-    --text-medium: #475569; /* 中等文本色 */
-    --border-light: #cbd5e1; /* 浅边框色 */
-    --shadow-light: rgba(0,0,0,0.05); /* 较浅的阴影 */
-    --shadow-medium: rgba(0,0,0,0.1); /* 中等阴影 */
+    --primary-color: #1e5a96;
+    --primary-light: #3b82f6;
+    --primary-lighter: #e0f2fe;
+    --secondary-color: #7c3aed;
+    --accent-color: #f59e0b;
+    --sidebar-bg: #1e3a5f;
+    --sidebar-text: #e8f0ff;
+    --sidebar-hover-bg: #2d5a8c;
+    --background-light: #f0f4f8;
+    --background-white: #ffffff;
+    --text-dark: #0f172a;
+    --text-medium: #475569;
+    --border-light: #cbd5e1;
+    --shadow-light: rgba(0,0,0,0.05);
+    --shadow-medium: rgba(0,0,0,0.1);
 
-    --font-heading: 'Playfair Display', 'Noto Serif SC', 'Microsoft YaHei', serif; /* 标题字体：优雅衬线体 */
-    --font-body: 'Noto Serif SC', 'Microsoft YaHei', 'SimSun', serif; /* 正文字体：衬线体 */
-    --font-accent: 'Playfair Display', serif; /* 强调字体 */
+    --font-heading: 'Playfair Display', 'Noto Serif SC', 'Microsoft YaHei', serif;
+    --font-body: 'Noto Serif SC', 'Microsoft YaHei', 'SimSun', serif;
+    --font-accent: 'Playfair Display', serif;
 
-    --sidebar-width: 240px; /* 侧边栏宽度 */
+    --sidebar-width: 240px;
 }
 
-/* --- 通用重置与基础样式 --- */
+/* 基础样式 */
 * {
     margin: 0;
     padding: 0;
@@ -68,7 +65,7 @@ a:hover {
     text-decoration: underline;
 }
 
-/* --- 页眉 (Header) 样式 --- */
+/* 页眉 */
 header {
     background: var(--background-white);
     padding: 15px 20px;
@@ -101,13 +98,13 @@ header h1 a:hover {
     text-decoration: none;
 }
 
-/* --- 侧边导航栏 (Sidebar Navigation) 样式 --- */
+/* 侧边导航栏 */
 #sidebar-nav {
     width: var(--sidebar-width);
     min-width: var(--sidebar-width);
     max-width: var(--sidebar-width);
     flex-shrink: 0;
-    background-color: var(--sidebar-bg); /* 紫色背景 */
+    background-color: var(--sidebar-bg);
     color: var(--sidebar-text);
     box-shadow: 2px 0 5px rgba(0,0,0,0.2);
     display: flex;
@@ -174,13 +171,13 @@ header h1 a:hover {
 
 #sidebar-nav a:hover,
 #sidebar-nav a.active {
-    background-color: var(--sidebar-hover-bg); /* 亮紫色悬停背景 */
+    background-color: var(--sidebar-hover-bg);
     color: #fff;
-    border-left-color: var(--primary-color); /* 主色调作为活跃指示条 */
+    border-left-color: var(--primary-color);
     text-decoration: none;
 }
 
-/* --- 返回首页按钮样式 --- */
+/* 返回首页按钮 */
 #sidebar-nav .sidebar-home-btn {
     margin-top: auto;
     margin-bottom: 20px;
@@ -207,14 +204,13 @@ header h1 a:hover {
     transform: translateY(-2px);
 }
 
-/* --- 主内容区域包裹器 (Main Content Wrapper) --- */
+/* 主内容区域 */
 #main-content-wrapper {
     flex-grow: 1;
     display: flex;
     flex-direction: column;
 }
 
-/* --- 主要内容区 (Main Content) 样式 --- */
 main {
     flex-grow: 1;
     padding: 80px 30px 30px 30px;
@@ -274,7 +270,7 @@ main section li {
     font-size: 1.05em;
 }
 
-/* --- 英雄区 (Hero Section) 样式 - 美化版本 --- */
+/* 校庆主题区 */
 #hero {
     background: linear-gradient(135deg, #0052a3 0%, #0066cc 50%, #3b82f6 100%);
     min-height: 100vh;
@@ -432,7 +428,7 @@ main section li {
     box-shadow: 0 8px 25px rgba(0,0,0,0.3);
 }
 
-/* --- 首页探索北邮导航区 (Explore Nav Section) 样式 --- */
+/* 探索北邮导航区 */
 #explore-nav {
     padding-top: 50px;
     padding-bottom: 50px;
@@ -563,7 +559,7 @@ main section li {
     box-shadow: 0 6px 18px rgba(0,102,204,0.4);
 }
 
-/* --- 首页特殊样式 --- */
+/* 首页特殊样式 */
 body.index-page {
     flex-direction: column;
 }
@@ -577,7 +573,7 @@ body.index-page #main-content-wrapper {
     flex-grow: 1;
 }
 
-/* --- 首页北邮介绍区 (About Intro Section) 样式 --- */
+/* 北邮介绍区 */
 #about-intro {
     padding: 100px 20px;
     text-align: center;
@@ -693,7 +689,7 @@ body.index-page #main-content-wrapper {
     letter-spacing: 0.5px;
 }
 
-/* --- 首页核心优势区 (Highlights Section) 样式 --- */
+/* 核心优势区 */
 #highlights {
     padding: 100px 20px;
     text-align: center;
@@ -811,7 +807,7 @@ body.index-page #main-content-wrapper {
 
 
 
-/* --- 表格样式 (services.html) --- */
+/* 表格样式 */
 table {
     width: 100%;
     border-collapse: separate;
@@ -860,7 +856,7 @@ table tbody tr:hover {
     transition: background-color 0.2s ease;
 }
 
-/* --- 画廊图片样式 (gallery.html) - 优化部分 --- */
+/* 画廊图片样式 */
 .gallery-images {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
@@ -919,7 +915,7 @@ table tbody tr:hover {
 }
 
 
-/* --- 多媒体容器样式 (gallery.html) --- */
+/* 多媒体容器 */
 .media-card {
     background: var(--background-white);
     padding: 30px;
@@ -1007,7 +1003,7 @@ audio.full-width-media:focus {
 }
 
 
-/* --- 页面顶部装饰条 (Page Header Decoration) - 固定在顶部 --- */
+/* 页面顶部装饰条 */
 .page-header-decoration {
     position: fixed;
     top: 0;
@@ -1036,7 +1032,7 @@ audio.full-width-media:focus {
     transform: none !important;
 }
 
-/* --- 内容页面顶部间距 (为固定页眉预留空间) --- */
+/* 内容页面顶部间距 */
 #about-content,
 #services-content,
 #gallery-content,
@@ -1044,8 +1040,7 @@ audio.full-width-media:focus {
     padding-top: 20px;
 }
 
-/* --- 联系我们页面 (contact.html) --- */
-
+/* 联系我们页面 */
 #contact-content h2 {
     color: var(--primary-color);
     border-bottom: 3px solid var(--primary-color);
@@ -1071,7 +1066,7 @@ audio.full-width-media:focus {
     margin-bottom: 10px;
 }
 
-/* --- 作者信息卡片样式 --- */
+/* 作者信息卡片 */
 .authors-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -1138,7 +1133,7 @@ audio.full-width-media:focus {
     text-decoration: underline;
 }
 
-/* --- 表单样式 (contact.html) --- */
+/* 表单样式 */
 .contact-form {
     max-width: 700px;
     margin: 40px auto;
@@ -1218,7 +1213,7 @@ audio.full-width-media:focus {
     box-shadow: 0 6px 18px rgba(0,102,204,0.4);
 }
 
-/* --- 页脚 (Footer) 样式 --- */
+/* 页脚 */
 footer {
     background: linear-gradient(135deg, #1a1a1a, #2d2d2d);
     color: var(--background-light);
@@ -1235,7 +1230,7 @@ footer p {
     letter-spacing: 0.5px;
 }
 
-/* --- 关于我们页面 (about.html) - 优化部分 --- */
+/* 关于我们页面 */
 #about-content .intro-paragraph {
     font-size: 1.15em;
     max-width: 800px;
@@ -1244,7 +1239,6 @@ footer p {
     line-height: 1.8;
 }
 
-/* 通用intro-paragraph样式 */
 .intro-paragraph {
     font-size: 1.15em;
     line-height: 1.9;
@@ -1263,12 +1257,10 @@ footer p {
     justify-content: center;
 }
 
-/* 校园风采页面的活动特色卡片 - 3列布局 */
 #gallery-content .about-cards-wrapper {
     grid-template-columns: repeat(3, 1fr);
 }
 
-/* 北邮成就页面的核心成就领域卡片 - 2*2布局 */
 .service-cards-grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -1278,7 +1270,6 @@ footer p {
     justify-content: center;
 }
 
-/* 北邮成就页面的科研创新亮点卡片 - 2*4布局 */
 #services-content .about-cards-wrapper {
     grid-template-columns: repeat(2, 1fr);
 }
@@ -1333,8 +1324,7 @@ footer p {
     margin-bottom: 15px;
 }
 
-/* --- 服务/产品页面 (services.html) - 优化部分 --- */
-
+/* 服务页面 */
 .service-card {
     background: var(--background-white);
     padding: 35px;
@@ -1401,9 +1391,9 @@ footer p {
 }
 
 
-/* --- 响应式设计 (媒体查询) --- */
+/* 响应式设计 */
 
-/* 大屏幕布局 (桌面端) */
+/* 桌面端 */
 @media (min-width: 769px) {
     body {
         display: flex;
